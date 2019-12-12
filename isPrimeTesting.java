@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class PrimeClass3 {
 
-	boolean prime22233(int value) {
+	boolean testIfPrime(int value) {
 		int count = 0;
 		int root = (int) Math.sqrt(value);
 		boolean fact = true;
 
 		if (value < 2) {
 			System.out.println("Try another Number greater or equal to Three");
-			return !fact;
+			return false;
 		}
 
 		for (int i = 2; i <= root; i++) {
@@ -20,13 +20,13 @@ public class PrimeClass3 {
 				System.out.println(value + " is not a prime number.");
 				System.out.println("count:" + count);
 				fact = false;
-				return fact;
+				return false;
 			}
 		}
 
 		System.out.println(value + " is a prime number.");
 		System.out.println("count:" + count);
-		return fact;
+		return false;
 	}
 
 	//test it here;
