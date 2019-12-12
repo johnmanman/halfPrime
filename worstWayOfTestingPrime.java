@@ -1,7 +1,7 @@
 package practice;
 
 public class PrimeClass2 {
-	boolean prime2111(int value) {
+	boolean testIfPrime2(int value) {
 
 		int count = 0;
 		boolean fact = true;
@@ -11,12 +11,12 @@ public class PrimeClass2 {
 				fact = false;
 				System.out.println(value + " is not a prime number.");
 				System.out.println("count:" + count);
-				return fact;
+				return false;
 			}
 		}
 		System.out.println(value + " is a prime number.");
 		System.out.println("count:" + count);
-		return fact;
+		return true;
 	}
 
 	// test it here;
