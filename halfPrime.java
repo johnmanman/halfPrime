@@ -1,14 +1,14 @@
 package practice;
 
 public class PrimeClass2 {
-	boolean prime2111(int value) {
+	boolean isPrimeTest1(int value) {
 
 		int count = 0;
 		boolean fact = true;
 		
     if (value < 2) {
 			System.out.println("Try another Number greater or equal to Three");
-			return !fact;
+			return false;
       }
       
     for (int i = 2; i < value / 2; ++i) {
@@ -17,12 +17,12 @@ public class PrimeClass2 {
 				fact = false;
 				System.out.println(value + " is not a prime number.");
 				System.out.println("count:" + count);
-				return fact;
+				return false;
 			}
 		}
 		System.out.println(value + " is a prime number.");
 		System.out.println("count:" + count);
-		return fact;
+		return false;
 	}
 
 	// test it here;
