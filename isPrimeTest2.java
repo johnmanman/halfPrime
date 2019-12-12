@@ -3,31 +3,42 @@ package practice;
 import java.util.Scanner;
 
 public class PrimeClass3 {
-
-	boolean prime22233(int value) {
+	
+	boolean primeTesting(int value) {
 		int count = 0;
 		int root = (int) Math.sqrt(value);
 		boolean fact = true;
 
-		if (value < 2) {
+		if (value < 3) {
 			System.out.println("Try another Number greater or equal to Three");
 			return false;
 		}
 
-		for (int i = 3; i <= root; i+=3) {
+		if (value % 2 == 0) {
+			System.out.println(value + " is not a prime number.");
 			count++;
-			if (value % i == 0) {
-				System.out.println(value + " is not a prime number.");
-				System.out.println("count:" + count);
-				fact = false;
-				return false;
+			System.out.println("count:" + count);
+			return false;
+
+		} else if (value % 2 != 0) {
+
+			for (int i = 3; i <= root; i += 2) {
+				count++;
+
+				if (value % i == 0) {
+					System.out.println(value + " is not a prime number.");
+					System.out.println("count:" + count);
+					fact = false;
+					return false;
+				}
 			}
 		}
-
 		System.out.println(value + " is a prime number.");
 		System.out.println("count:" + count);
 		return false;
 	}
+	
+	
 
 	//test it here;
 	public static void main(String[] args) {
