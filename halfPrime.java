@@ -1,5 +1,8 @@
 package practice;
 
+// check with 4 if it is prime or not, program should return it not prime
+//please remove the local variable as you actually don't need it (the lesson is write very few lines of code as less as possible but the code should be readable and understandable)
+
 public class PrimeClass2 {
 	boolean prime2111(int value) {
 
