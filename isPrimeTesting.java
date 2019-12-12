@@ -13,8 +13,12 @@ public class PrimeClass3 {
 			System.out.println("Try another Number greater or equal to Three");
 			return false;
 		}
+		
+		if(value%2==0){
+			return false;
+		}
 
-		for (int i = 2; i <= root; i++) {
+		for (int i = 3; i <= root; i+=2) {
 			count++;
 			if (value % i == 0) {
 				System.out.println(value + " is not a prime number.");
