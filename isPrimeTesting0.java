@@ -1,7 +1,7 @@
 package practice;
 
 import java.util.Scanner;
-
+//looking great
 public class PrimeClass {
 
 	boolean primeTesting(int value) {
