@@ -9,27 +9,22 @@ public class PrimeClass3 {
 		int root = (int) Math.sqrt(value);
 		boolean fact = true;
 
-		if (value < 0) {
-			System.out.println("Try another Number greater or equal to Three");
+		if (value < = 0) {
+			System.out.println("Try another positive Number please");
 			return false;
 		}
 
 		if (value % 2 == 0) {
-			System.out.println(value + " is not a prime number.");
-			count++;
-			System.out.println("count:" + count);
+			System.out.println(value + " is not a prime number: divisible by 2.");
 			return false;
-
-		} else if (value % 2 != 0) {
-
-			for (int i = 3; i <= root; i += 2) {
-				count++;
-
-				if (value % i == 0) {
-					System.out.println(value + " is not a prime number.");
-					System.out.println("count:" + count);
-					fact = false;
-					return false;
+		} 
+		for (int i = 3; i <= root; i += 2) {
+			count++;
+			
+			if (value % i == 0) {
+				System.out.println(value + " is not a prime number.");
+				System.out.println("count:" + count);
+				return false;
 				}
 			}
 		}
