@@ -9,7 +9,7 @@ public class PrimeClass3 {
 		int root = (int) Math.sqrt(value);
 		boolean fact = true;
 
-		if (value < 3) {
+		if (value < 0) {
 			System.out.println("Try another Number greater or equal to Three");
 			return false;
 		}
