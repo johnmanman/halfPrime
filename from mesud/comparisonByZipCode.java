@@ -8,15 +8,10 @@ public class Application {
 
 // TODO: sort the list using the zip code of the mailing address;
 
-// there are two ways to compare Student objects in the list: 
-//1. by creating a new class that implements comparator() 
-// 2. by making the Address class implements comparable
+//  
+// by creating a new class that implements comparable() 
+//
 }
-
-
-
-
-
 
 package org.learn.java;
 
